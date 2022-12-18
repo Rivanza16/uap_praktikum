@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="uap_kasir.Add_DeleteBarangController">
+   <children>
+      <Text layoutX="63.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama" />
+      <Text layoutX="63.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harga" />
+      <TextField fx:id="NamaFld" layoutX="192.0" layoutY="58.0" />
+      <TextField fx:id="HargaFld" layoutX="193.0" layoutY="110.0" />
+      <Text layoutX="64.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah" />
+      <Text layoutX="70.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diskon" />
+      <Text layoutX="73.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barcode" />
+      <Text layoutX="68.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXpired" />
+      <TextField fx:id="JumlahFld" layoutX="195.0" layoutY="160.0" />
+      <TextField fx:id="DiskonFld" layoutX="194.0" layoutY="200.0" />
+      <TextField fx:id="BarcodeFld" layoutX="193.0" layoutY="237.0" />
+      <TextField fx:id="ExpiredFld" layoutX="195.0" layoutY="277.0" />
+      <Button fx:id="AddBtn" layoutX="508.0" layoutY="360.0" mnemonicParsing="false" onAction="#ADD" text="Add" />
+      <Button fx:id="DeleteBtn" layoutX="433.0" layoutY="360.0" mnemonicParsing="false" onAction="#DELETE" text="Delete" />
+      <Button fx:id="CancelBtn" layoutX="37.0" layoutY="360.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Text fx:id="TXTT" layoutX="151.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="72.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategori" />
+      <TextField fx:id="KategoriFld" layoutX="193.0" layoutY="310.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="uap_kasir.ViewDataMakananController">
+   <children>
+      <TableView fx:id="tabelMakanan" layoutX="27.0" layoutY="138.0" prefHeight="435.0" prefWidth="748.0">
+        <columns>
+          <TableColumn fx:id="namakolom" prefWidth="139.19998168945312" text="Nama" />
+          <TableColumn fx:id="hargaKolom" prefWidth="100.80001831054688" text="Harga" />
+            <TableColumn fx:id="jumlahKolom" prefWidth="90.4000244140625" text="Jumlah" />
+            <TableColumn fx:id="diskonKolom" prefWidth="120.79998779296875" text="Diskon" />
+            <TableColumn fx:id="idKolom" prefWidth="140.00006103515625" text="Id" />
+            <TableColumn fx:id="dayaKolom" prefWidth="160.0" text="Daya Tahan" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnTambah" layoutX="27.0" layoutY="98.0" mnemonicParsing="false" onAction="#tambahMkn" text="TAMBAH" />
+      <Button fx:id="btnMuat" layoutX="120.0" layoutY="97.0" mnemonicParsing="false" onAction="#sendMuat" prefHeight="26.0" prefWidth="64.0" text="MUAT" />
+      <Text layoutX="307.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIST MAKANAN">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
